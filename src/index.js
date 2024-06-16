@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Search from './Search';
+import './App.css';
 
 
 //import App from './App';
@@ -56,7 +57,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 function Chat(props) {
   return (
 
-    <div style={{ backgroundColor: "white", margin: "4px", borderRadius: "5px" }}>
+    <div style={{ backgroundColor: "white", margin: "10px", borderRadius: "5px" }}>
       {/* <Card.Text>
         <p>search</p>
       </Card.Text> */}
@@ -66,9 +67,9 @@ function Chat(props) {
           <div style={{width:"max-content"}}>
             <img src={props.dp} style={{ width: "50px", borderRadius: "50%" }}></img>
           </div>
-          <div style={{display:"flex" , justifyContent:"space-between" , width:"100%"}}>
-            <div>
-              <h3>{props.name}</h3>
+          <div style={{display:"flex" , justifyContent:"space-between" , width:"100%", alignItems:"center"}}>
+            <div style={{marginLeft:"5px"}}>
+              <p style={{fontWeight:"bold"}}>{props.name}</p>
               <p>{props.message}</p>
             </div>
             <div>
@@ -92,24 +93,28 @@ var person = [
     star: "⭐"
   },
   {
+    dp: "./dp.jpg",
     name: "Ishu",
     message: "Good Morning",
-    time: 7.50,
+    time: 7.05,
     star: "⭐"
   },
   {
+    dp: "./dp.jpg",
     name: "Santhosh",
     message: "Call me",
-    time: 8.00,
+    time: 8.03,
     star: "⭐"
   },
   {
+    dp: "./dp.jpg",
     name: "Pattu",
     message: "Can we meet around 5pm today",
-    time: 9.10,
+    time: 9.18,
     star: "⭐"
   },
   {
+    dp: "./dp.jpg",
     name: "Dharani",
     message: "Yes Sure",
     time: 10.15,
